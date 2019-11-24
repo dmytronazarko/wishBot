@@ -1,15 +1,16 @@
 {
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
-  "parserOptions": {
-		"ecmaVersion": 6
-  },
-  "env": {
-    "node": true
-  },
   "rules": {
-    "prettier/prettier": ["error"],
-    "arrow-parens": 0,
-    "import/prefer-default-export": 0
+    "prettier/prettier": ["error", {
+      "singleQuote": true
+    }],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "camelcase": "off"
   }
 }
